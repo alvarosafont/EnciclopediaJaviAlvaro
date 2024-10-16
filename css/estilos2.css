@@ -1,0 +1,203 @@
+:root {
+    /* Paleta de colores accesible AAA */
+    --color-texto: #003366; /* Azul oscuro para texto */
+    --color-fondo: #f5f5f5; /* Gris muy claro, reemplazando el blanco */
+    --color-primario: #005580; /* Azul más oscuro para enlaces y elementos destacados */
+    --color-secundario: #008080; /* Verde azulado para hover y bordes */
+    --color-borde: #cccccc; /* Borde gris claro */
+    --color-footer-fondo: #333333; /* Fondo oscuro para el pie de página */
+    --color-footer-texto: #ffffff; /* Texto blanco en el pie de página */
+    --color-cita-fondo: #e6f2ff; /* Fondo suave para citas */
+}
+.anuncio {
+background-color: var(--color-fondo);
+color: var(--color-primario);
+font-family: Verdana, Tahoma, Arial, sans-serif;
+padding: 10px;
+border-left: var(--color-borde) ;
+}
+
+/* Estilo para los elementos con borde */
+.conBorde {
+border: var(--color-borde);
+padding: 15px;
+}
+
+/* Estilo para el enlace de "saltar a contenido" */
+.saltar {
+position: absolute;
+top: -40px;
+left: 0;
+background-color: var(--color-fondo);
+color: var(--color-primario);
+padding: 8px;
+text-decoration: none;
+}
+
+/* El enlace de "saltar a contenido" será visible cuando reciba el foco */
+.saltar:focus {
+top: 10px;
+}
+
+body {
+    font-family: Verdana, Tahoma, Arial, sans-serif; /* Fuentes claras y accesibles */
+    background-color: var(--color-fondo); /* Fondo claro */
+    color: var(--color-texto); /* Texto principal */
+    line-height: 1.6;
+    font-size: 1.125rem; /* 18px por defecto, tamaño accesible */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: var(--color-texto);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamaño grande para encabezados */
+    border-bottom: 3px solid var(--color-primario);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem; /* Tamaño grande pero más pequeño que h1 */
+    border-bottom: 2px solid var(--color-primario);
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--color-secundario); /* Color más suave pero accesible */
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Enlaces */
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--color-secundario);
+    text-decoration: underline;
+}
+
+/* Listas */
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Citas */
+blockquote {
+    background-color: var(--color-cita-fondo);
+    border-left: 5px solid var(--color-primario);
+    padding: 15px;
+    margin: 20px 0;
+    color: var(--color-texto);
+    font-style: italic;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid var(--color-borde);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-primario);
+    color: var(--color-footer-texto);
+}
+
+td {
+    background-color: var(--color-fondo);
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-footer-fondo);
+    color: var(--color-footer-texto);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--color-footer-texto);
+    text-decoration: underline;
+}
+
+/* Navegación */
+nav a {
+    color: var(--color-primario);
+    padding: 10px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--color-secundario);
+    text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-borde);
+    margin-bottom: 20px;
+}
+
+aside {
+    padding: 20px;
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-borde);
+    margin-bottom: 20px;
+}
+/* Foco visible para inputs */
+input:focus {
+    background-color: #ffcccc; /* Fondo rojo claro cuando recibe el foco */
+    
+}
+
+
+/* Foco visible dentro de formularios */
+form:focus-within {
+    background-color:#E6E6FA;
+   
+}
+
