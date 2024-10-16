@@ -1,3 +1,7 @@
+@import url("minimum.css") screen and (max-width: 480px);
+@import url("medium.css") screen and (min-width: 481px) and (max-width: 1024px);
+@import url("maximum.css") screen and (min-width: 1025px);
+
 :root {
     /* Paleta de colores accesible AAA */
     --color-texto: #003366; /* Azul oscuro para texto */
@@ -49,6 +53,7 @@ body {
     padding: 0;
 }
 
+	
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -87,10 +92,11 @@ a {
     color: var(--color-primario);
     text-decoration: none;
     font-weight: bold;
+    font-family: Arial ,Helvetica , sans-seriif;
 }
 
 a:hover {
-    color: var(--color-secundario);
+    color: #004d00;
     text-decoration: underline;
 }
 
@@ -119,6 +125,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    table-layout:fixed;
 }
 
 table, th, td {
@@ -128,23 +135,33 @@ table, th, td {
 th, td {
     padding: 12px;
     text-align: left;
+    font-family: Verdana, Tahoma, Arial, sans-serif;
+    text-align:center;
 }
 
 th {
     background-color: var(--color-primario);
     color: var(--color-footer-texto);
+    
 }
 
 td {
     background-color: var(--color-fondo);
+    
+}
+td:hover{
+    background-color:#ffcccc;
+    
+}
+caption {
+font-variant: small-caps;
 }
 
-/* Imágenes */
+/* Imágenes - BORRAR*/
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px 0;
+   "width: 100%; 
+   max-width: 300px; 
+   height: auto;"
 }
 
 /* Footer */
@@ -201,3 +218,8 @@ form:focus-within {
    
 }
 
+fieldset {width: 20em; padding: 1em;}
+legend {font-weight: bold;}
+label {float: left; display: block; width: 8em;}
+input[type="text"] {float: none; display: block;}
+.centrado {margin: 10px auto;}
