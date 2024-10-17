@@ -2,14 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Añadir Nueva Versión de Artículo - Enciclopedia</title>
-     <link rel="stylesheet" href="../css/estilos2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/estilos2.css" type="text/css">
 </head>
 <body>
-	<a href="#contenido-principal" class="saltar">Saltar al contenido principal</a>
-   <main id="contenido-principal">
+    <a href="#contenido-principal" class="saltar">Saltar al contenido principal</a>
+    <main id="contenido-principal">
         <img src="../imagenes/logo.jpg" alt="Logo" style="width: 100%; max-width: 300px; height: auto;">
-		
+        
         <nav>
             <p>
                 <a href="../index.html" title="Indice">Indice</a> >
@@ -17,61 +19,58 @@
             </p>
         </nav>
         <h2>Añadir Nueva Versión de Artículo</h2>
-         <p>Los campos que llevan '*' son obligatorios</p>
+        <p>Los campos que llevan '*' son obligatorios</p>
         <form action="../articulos/respuesta_formulario.html" method="GET">
-            <p>
+            <p class="textolargo">
+				<i class="fas fa-notes-medical"></i>
                 <label for="descripcion"> Enfermedad*:</label>
                 <textarea id="descripcion" name="descripcion" rows="1" cols='30' placeholder="Descripción de la enfermedad..." required></textarea>
             </p>
 
             <p>
-                <label for="pruebas">Pruebas*:</label>
+                <label for="pruebas"><i class="fas fa-vials"></i> Pruebas*:</label>
                 <textarea id="pruebas" name="pruebas" rows="1" cols='42' placeholder="Descripción de las pruebas realizadas..." required></textarea>
             </p>
 
-            <p>
-                <label for="tratamiento">Tratamiento*:</label>
-                <textarea id="tratamiento" name="tratamiento" rows="1" cols='30' placeholder="Descripción del tratamiento..." required></textarea>
-            </p>
+            <p class="textolargo">
+				<i class="fas fa-pills"></i> 
+				<label for="tratamiento">Tratamiento*:</label>
+				<textarea id="tratamiento" name="tratamiento" rows="1" cols="30" placeholder="Descripción del tratamiento..." required></textarea>
+			</p>
 
             <p>
-                <label for="sintomas">Síntomas*:</label>
+                <label for="sintomas"><i class="fas fa-thermometer-half"></i> Síntomas*:</label>
                 <textarea id="sintomas" name="sintomas" rows="1" cols='30' placeholder="Síntomas de la enfermedad..." required></textarea>
             </p>
 
             <p>
-                <label for="causas">Causas*:</label>
+                <label for="causas"><i class="fas fa-dna"></i> Causas*:</label>
                 <textarea id="causas" name="causas" rows="1" cols='38' placeholder="Causas principales de la enfermedad..." required></textarea>
             </p>
 
             <p>
-                <label for="email">Correo*:</label>
+                <label for="email"><i class="fas fa-envelope"></i> Correo*:</label>
                 <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
             </p>
 
             <p>
-                <label for="date">Fecha *:</label>
+                <label for="date"><i class="fas fa-calendar-alt"></i> Fecha*:</label>
                 <input type="date" id="date" name="date" required>
             </p>
+
             <p>
                 Si no hay versiones anteriores, se pondrá 1
             </p>
 
             <p>
-                <label style='color:red' for="version">Versión:</label>
-                <input type="number" id="version" name="version" min="1" max="100">
-            </p>
-
-            <p>
-                <label for="range">Importancia:</label>
+                <label for="range"><i class="fas fa-chart-line"></i> Importancia:</label>
                 <input type="range" id="range" name="importance" min="1" max="10" step="1">
             </p>
 
             <input type="submit" value="Enviar" class="centrado">
         </form>
-
     </main>
-    
+
     <footer>
         <dl>
             <dt>Autores:</dt>
@@ -83,7 +82,8 @@
         </p>
         <p>
             <strong>COPYRIGHT 2024</strong>
-        </p>	
+        </p>    
     </footer>
 </body>
 </html>
+

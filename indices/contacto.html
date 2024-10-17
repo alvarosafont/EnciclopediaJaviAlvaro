@@ -2,14 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Enciclopedia</title>
-     <link rel="stylesheet" href="../css/estilos2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/estilos2.css" type="text/css">
 </head>
 <body>
-		<a href="#contenido-principal" class="saltar">Saltar al contenido principal</a>
-	    <main id="contenido-principal">
+    <a href="#contenido-principal" class="saltar">Saltar al contenido principal</a>
+    <main id="contenido-principal">
     
-			<img src="../imagenes/logo.jpg" alt="Logo" style="width: 100%; max-width: 300px; height: auto;">
+        <img src="../imagenes/logo.jpg" alt="Logo" style="width: 100%; max-width: 300px; height: auto;">
        
         <nav>
             <p>
@@ -20,22 +22,22 @@
         <h2>Contáctanos</h2>
         <p>Los campos que llevan '*' son obligatorios</p>
         <form action="../articulos/respuesta_contacto.html" method="GET">
-            <p>Motivo del contacto</p>
+            <p><i class="fas fa-info-circle"></i> Motivo del contacto</p>
             
             <p>
-                <label for="asunto">Asunto*:</label>
+                <label for="asunto"><i class="fas fa-tag"></i> Asunto*:</label>
                 <input type="text" id="asunto" name="asunto" required>
             </p>
             
             <p>
-                <label for="comentario">Pregunta*:</label><br>
+                <label for="comentario"><i class="fas fa-question-circle"></i> Pregunta*:</label><br>
                 <textarea id="comentario" name="comentario" rows="5" cols="30" placeholder="¿Cómo puedo realizar una búsqueda?" required></textarea>
             </p>
             
-            <p>Selecciona la profesión</p>
+            <p><i class="fas fa-user-md"></i> Selecciona la profesión</p>
             
             <p>
-                <label for="yo_soy">Yo soy:</label>
+                <label for="yo_soy"><i class="fas fa-briefcase"></i> Yo soy:</label>
                 <select id="yo_soy" name="yo_soy">
                     <option value="paciente">Paciente</option>
                     <option value="cientifico">Científico</option>
@@ -46,37 +48,38 @@
                 </select>
             </p>
             
-            <p>
-                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
-            </p>
+           
             
-            <p>Marca la casilla</p>
             
             <fieldset>
                 <legend>Sexo:</legend>
                 <p>
                     <input type="radio" id="hombre" name="sexo" value="hombre" class="centrado" checked>
-                    <label for="hombre">Hombre</label>
+                    <label for="hombre"><i class="fas fa-male"></i> Hombre</label>
                 </p>
                 <p>
                     <input type="radio" id="mujer" name="sexo" value="mujer">
-                    <label for="mujer">Mujer</label>
+                    <label for="mujer"><i class="fas fa-female"></i> Mujer</label>
                 </p>
                 <p>
                     <input type="radio" id="otro" name="sexo" value="otro">
-                    <label for="otro">Otro</label>
+                    <label for="otro"><i class="fas fa-genderless"></i> Otro</label>
                 </p>
             </fieldset>
             
+             <p class="textolargo">
+                <label for="fecha_nacimiento"><i class="fas fa-calendar-alt"></i> Fecha de nacimiento </label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" style="width: 8em"> 
+            </p>
+            
             <p>
-                <label for="email">Correo *:</label>
+                <label for="email"><i class="fas fa-envelope"></i> Correo *:</label>
                 <input type="email" id="email" name="email" placeholder="jlz4@alu.ua.es" required>
             </p>
             
             <p>
                 <input type="checkbox" id="recibir_info" name="recibir_info">
-                <label for="recibir_info">+ información</label>
+                <label for="recibir_info"><i class="fas fa-info-circle"></i> recibir + info</label>
             </p>
             
             <p>
@@ -96,8 +99,7 @@
         </p>
         <p>
             <strong>COPYRIGHT 2024</strong>
-        </p>	
+        </p>    
     </footer>
 </body>
 </html>
-

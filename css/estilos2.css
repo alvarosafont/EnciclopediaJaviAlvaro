@@ -48,7 +48,7 @@ body {
     background-color: var(--color-fondo); /* Fondo claro */
     color: var(--color-texto); /* Texto principal */
     line-height: 1.6;
-    font-size: 18px; /* 18px por defecto, tamaño accesible */
+    font-size: 1.125rem; /* 18px por defecto, tamaño accesible */
     margin: 0;
     padding: 0;
 }
@@ -58,7 +58,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-	width: 100%
 }
 
 /* Títulos */
@@ -224,3 +223,15 @@ legend {font-weight: bold;}
 label {float: left; display: block; width: 8em;}
 input[type="text"] {float: none; display: block;}
 .centrado {margin: 10px auto;}
+
+.textolargo {	
+			
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Espacio entre el label y el input */
+        }
+.texto.largo label {
+            min-width: 150px; /* Ancho mínimo para el label */
+            
+        }
+

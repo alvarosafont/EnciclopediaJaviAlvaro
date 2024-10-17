@@ -14,6 +14,8 @@ h1, h2, h3 {
 img, video {
   max-width: 100%; /* Asegura que las imágenes y videos no excedan el ancho del contenedor */
   height: auto; /* Mantiene la proporción de aspecto */
+  display: block; /* Asegura que se comporten como elementos de bloque */
+  margin: 0 auto; /* Centra imágenes y videos */
 }
 
 /* Estilos para formularios */
@@ -21,6 +23,9 @@ form {
   display: flex; /* Utiliza flexbox para el diseño del formulario */
   flex-direction: column; /* Asegura que los elementos del formulario estén en columnas */
   margin: 20px 0; /* Añade margen para separar formularios */
+  max-width: 600px; /* Limita el ancho del formulario */
+  margin-left: auto; /* Centra el formulario */
+  margin-right: auto; /* Centra el formulario */
 }
 
 input, select, textarea {
