@@ -1,13 +1,13 @@
 body {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .container {
-  padding: 20px;
+  padding: 10px;
 }
 
 h1, h2, h3 {
-  font-size: 1.5em; /* Aumenta el tamaño del texto en pantallas medianas */
+  font-size: 1.2em; /* Ajusta el tamaño del texto */
   text-align: center; /* Centra el texto */
 }
 
@@ -20,12 +20,12 @@ img, video {
 form {
   display: flex; /* Utiliza flexbox para el diseño del formulario */
   flex-direction: column; /* Asegura que los elementos del formulario estén en columnas */
-  margin: 15px 0; /* Añade margen para separar formularios */
+  margin: 10px 0; /* Añade margen para separar formularios */
 }
 
 input, select, textarea {
   width: 100%; /* Asegura que los campos del formulario llenen el ancho del contenedor */
-  padding: 10px; /* Añade espacio interno a los campos */
+  padding: 8px; /* Añade espacio interno a los campos */
   margin: 5px 0; /* Espacio entre los campos */
-  font-size: 16px; /* Tamaño de fuente para los campos */
+  font-size: 14px; /* Tamaño de fuente para los campos */
 }
