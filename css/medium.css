@@ -1,2 +1,8 @@
-<link href="medium.css" rel="stylesheet" type="text/css" media="screen and (min-width: 481px)
-and (max-width: 1024px)" />
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  padding: 20px;
+}

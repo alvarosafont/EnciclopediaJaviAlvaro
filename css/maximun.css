@@ -1,2 +1,8 @@
-<link href="maximum.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)"
-/> 
+
+body {
+  font-size: 18px;
+}
+
+.container {
+  padding: 40px;
+}

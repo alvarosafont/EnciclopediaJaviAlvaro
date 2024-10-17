@@ -48,7 +48,7 @@ body {
     background-color: var(--color-fondo); /* Fondo claro */
     color: var(--color-texto); /* Texto principal */
     line-height: 1.6;
-    font-size: 1.125rem; /* 18px por defecto, tamaño accesible */
+    font-size: 18px; /* 18px por defecto, tamaño accesible */
     margin: 0;
     padding: 0;
 }
@@ -58,6 +58,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+	width: 100%
 }
 
 /* Títulos */
