@@ -1,0 +1,137 @@
+:root {
+    /* Paleta de colores */
+    --color-fondo-claro: #f0f4f8; /* Color claro en lugar de blanco */
+    --color-texto: #333333;
+    --color-primario: #3498db; /* Azul para títulos y enlaces */
+    --color-secundario: #2980b9; /* Azul más oscuro para hover */
+    --color-titulos: #2c3e50; /* Títulos oscuros */
+    --color-borde: #dddddd;
+    --color-cita-fondo: #e7f3fe;
+    --color-footer-fondo: #2c3e50;
+    --color-footer-texto: #ffffff;
+}
+
+/* Estilos básicos */
+body {
+    font-family: 'Georgia', serif;
+    background-color: var(--color-fondo-claro);
+    color: var(--color-texto);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor general */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: var(--color-titulos);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid var(--color-primario);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--color-primario);
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--color-secundario);
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 20px;
+}
+
+/* Enlaces */
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--color-secundario);
+    text-decoration: underline;
+}
+
+/* Listas */
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Citas */
+blockquote {
+    background-color: var(--color-cita-fondo);
+    border-left: 5px solid var(--color-primario);
+    padding: 15px;
+    margin: 20px 0;
+    color: var(--color-titulos);
+    font-style: italic;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid var(--color-borde);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-primario);
+    color: var(--color-footer-texto);
+}
+
+td {
+    background-color: var(--color-fondo-claro);
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-footer-fondo);
+    color: var(--color-footer-texto);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--color-footer-texto);
+    text-decoration: underline;
+}
+
