@@ -1,6 +1,9 @@
 @import url("minimum.css") screen and (max-width: 480px);
 @import url("medium.css") screen and (min-width: 481px) and (max-width: 1024px);
 @import url("maximum.css") screen and (min-width: 1025px);
+@import url("print.css");
+@import url("medianoche.css") screen and (prefers-color-scheme: dark);
+@import url("alto-contraste.css") screen and (prefers-contrast: more);
 
 :root {
     /* Paleta de colores accesible AAA */
@@ -12,7 +15,9 @@
     --color-footer-fondo: #333333; /* Fondo oscuro para el pie de página */
     --color-footer-texto: #ffffff; /* Texto blanco en el pie de página */
     --color-cita-fondo: #e6f2ff; /* Fondo suave para citas */
+	--color-header-fondo: #333333; /* Azul medianamente oscuro para el header */
 }
+
 .anuncio {
 background-color: var(--color-fondo);
 color: var(--color-primario);
@@ -61,14 +66,15 @@ body {
 }
 
 /* Títulos */
-h1, h2, h3 {
+
+h1, h2 {
     color: var(--color-texto);
     margin-bottom: 15px;
 }
 
 h1 {
     font-size: 2.5rem; /* Tamaño grande para encabezados */
-    border-bottom: 3px solid var(--color-primario);
+    border-bottom: 3px solid var(--color-footer-texto);
     padding-bottom: 10px;
 }
 
@@ -160,7 +166,7 @@ font-variant: small-caps;
 /* Imágenes - BORRAR*/
 img {
    "width: 100%; 
-   max-width: 300px; 
+   max-width: 100px; 
    height: auto;"
 }
 
@@ -176,6 +182,23 @@ footer {
 footer a {
     color: var(--color-footer-texto);
     text-decoration: underline;
+}
+header {
+    background-color: var(--color-header-fondo); /* Nuevo color para el header */
+    color: var(--color-footer-texto); /* Texto blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo del h1 dentro del header */
+header h1 {
+    color: var(--color-footer-texto); /* Texto blanco para mejor contraste */
+    font-size: 2.5rem; /* Tamaño grande */
+}
+    background-color: var(--color-primario); /* Azul oscuro accesible */
+    color: var(--color-footer-texto); /* Texto blanco para contraste */
+    padding: 20px;
+    text-align: center;
 }
 
 /* Navegación */
@@ -218,7 +241,7 @@ form:focus-within {
    
 }
 
-fieldset {width: 20em; padding: 1em;}
+fieldset {width: 8em; padding: 1em;}
 legend {font-weight: bold;}
 label {float: left; display: block; width: 8em;}
 input[type="text"] {float: none; display: block;}
@@ -234,4 +257,27 @@ input[type="text"] {float: none; display: block;}
             min-width: 150px; /* Ancho mínimo para el label */
             
         }
+		
+.indice-horizontal {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se ajusten si son muchos */
+    gap: 10px; /* Espacio entre botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+	list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 10px 0;
+}
 
+.indice-boton {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.indice-boton:hover {
+    background-color: var(--color-secundario); /* Cambia de color al pasar el mouse */
+}

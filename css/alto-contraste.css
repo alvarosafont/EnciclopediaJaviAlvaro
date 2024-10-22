@@ -1,0 +1,70 @@
+/* Modo Alto Contraste */
+:root {
+    --color-texto: #000000; /* Negro para mayor contraste */
+    --color-fondo: #ffffe6; /* Fondo amarillo pálido para suavidad */
+    --color-primario: #0000cc; /* Azul oscuro muy visible para enlaces */
+    --color-secundario: #ff6600; /* Naranja brillante para resaltar elementos */
+    --color-borde: #000000; /* Borde negro para mayor contraste */
+    --color-footer-fondo: #000000; /* Fondo negro en el pie de página */
+    --color-footer-texto: #ffffff; /* Texto blanco en el pie de página */
+    --color-cita-fondo: #ffcc00; /* Fondo amarillo brillante para citas */
+    --color-header-fondo: #000000; /* Fondo negro para el header */
+}
+
+/* Aplica los estilos globales cuando el modo alto contraste esté activado */
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+a {
+    color: var(--color-primario);
+}
+
+a:hover {
+    color: var(--color-secundario);
+}
+
+/* Header y Footer */
+header {
+    background-color: var(--color-header-fondo);
+    color: var(--color-footer-texto);
+}
+footer {
+    background-color: var(--color-footer-fondo);
+    color: var(--color-footer-texto);
+}
+
+.anuncio {
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+    border-left: 5px solid var(--color-borde);
+}
+
+blockquote {
+    background-color: var(--color-cita-fondo);
+    color: var(--color-texto);
+    border-left: 5px solid var(--color-primario);
+}
+
+table {
+    border: 1px solid var(--color-borde);
+}
+
+th {
+    background-color: var(--color-primario);
+    color: var(--color-footer-texto);
+}
+
+td {
+    background-color: var(--color-fondo);
+}
+
+input:focus {
+    background-color: #ffcc00; /* Fondo amarillo brillante cuando el input recibe el foco */
+}
+
+form:focus-within {
+    background-color: #ffff99; /* Fondo amarillo suave dentro de formularios */
+}
+

@@ -1,0 +1,70 @@
+/* Modo Noche */
+:root {
+    --color-texto: #f5f5f5; /* Texto claro */
+    --color-fondo: #1a1a1a; /* Fondo oscuro */
+    --color-primario: #66b3ff; /* Azul claro para enlaces y destacados */
+    --color-secundario: #80d4ff; /* Azul más claro para hover y bordes */
+    --color-borde: #666666; /* Borde gris oscuro */
+    --color-footer-fondo: #000000; /* Fondo negro para el pie de página */
+    --color-footer-texto: #f5f5f5; /* Texto claro en el pie de página */
+    --color-cita-fondo: #333333; /* Fondo oscuro para citas */
+    --color-header-fondo: #000000; /* Fondo negro para el header */
+}
+
+/* Aplica los estilos globales cuando el modo noche esté activado */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+a {
+    color: var(--color-primario);
+}
+
+a:hover {
+    color: var(--color-secundario);
+}
+
+/* Header y Footer */
+header {
+    background-color: var(--color-header-fondo);
+    color: var(--color-footer-texto);
+}
+
+footer {
+    background-color: var(--color-footer-fondo);
+    color: var(--color-footer-texto);
+}
+
+.anuncio {
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+    border-left: 5px solid var(--color-borde);
+}
+
+blockquote {
+    background-color: var(--color-cita-fondo);
+    color: var(--color-texto);
+    border-left: 5px solid var(--color-primario);
+}
+
+table {
+    border: 1px solid var(--color-borde);
+}
+
+th {
+    background-color: var(--color-primario);
+    color: var(--color-footer-texto);
+}
+
+td {
+    background-color: var(--color-fondo);
+}
+
+input:focus {
+    background-color: #333333; /* Fondo oscuro cuando el input recibe el foco */
+}
+
+form:focus-within {
+    background-color: #444444; /* Fondo oscuro dentro de formularios */
+}

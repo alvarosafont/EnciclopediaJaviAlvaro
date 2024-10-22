@@ -1,0 +1,112 @@
+@media print {
+    /* Establecer márgenes adecuados para impresión en A4 */
+    body {
+        margin: 2cm; /* Márgenes adecuados para papel A4 */
+        font-size: 12pt; /* Tamaño de fuente en puntos para impresión */
+        line-height: 1.4;
+        color: #000000; /* Asegura que el texto sea negro para legibilidad */
+        background-color: #ffffff; /* Fondo blanco para impresión */
+    }
+
+    /* Eliminar elementos innecesarios para impresión */
+    nav, 
+    header, 
+    footer, 
+    .saltar, 
+    .indice-horizontal, 
+    button, 
+    input, 
+    textarea, 
+    aside {
+        display: none !important; /* Ocultar navegación, botones y aside */
+    }
+
+    /* Asegurar que los enlaces se vean de forma clara */
+    a {
+        color: #000000; /* Enlaces en negro */
+        text-decoration: underline; /* Subrayar enlaces impresos */
+    }
+
+    /* Mostrar las URL después de los enlaces para claridad */
+    a::after {
+        content: " (" attr(href) ")"; /* Añadir la URL entre paréntesis */
+        font-size: 10pt;
+        color: #333333; /* URL en gris oscuro */
+    }
+
+    /* Optimizar el tamaño de títulos */
+    h1, h2, h3 {
+        color: #000000; /* Asegurar que los títulos sean negros */
+        page-break-after: avoid; /* Evitar que los títulos se queden solos */
+    }
+
+    h1 {
+        font-size: 24pt; /* Ajustar tamaño de encabezado para impresión */
+    }
+
+    h2 {
+        font-size: 20pt;
+    }
+
+    h3 {
+        font-size: 16pt;
+    }
+
+    /* Ajustar márgenes de párrafos */
+    p {
+        margin-bottom: 0.8cm;
+        orphans: 3; /* Evitar que se corten líneas solas en la página siguiente */
+        widows: 3; /* Evitar que párrafos cortos queden solos en la página siguiente */
+    }
+
+    /* Optimizar tablas para impresión */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1pt solid #000000; /* Bordes de tablas en negro */
+        margin-bottom: 1cm;
+    }
+
+    th, td {
+        border: 1pt solid #000000; /* Bordes visibles en celdas */
+        padding: 0.4cm;
+        font-size: 10pt; /* Ajustar tamaño de texto en tablas */
+    }
+
+    /* Evitar roturas de página dentro de las tablas */
+    table, tr, td {
+        page-break-inside: avoid;
+    }
+
+    /* Optimizar las listas */
+    ul, ol {
+        padding-left: 1cm;
+    }
+
+    li {
+        margin-bottom: 0.5cm;
+    }
+
+    /* Quitar imágenes innecesarias */
+    img {
+        display: none; /* Ocultar imágenes decorativas */
+    }
+
+    /* Quitar colores de fondo y bordes */
+    * {
+        background: none !important;
+        color: #000000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    /* Evitar cortes de página innecesarios */
+    section, article, blockquote {
+        page-break-inside: avoid;
+    }
+
+    /* Controlar rotura de página */
+    h1, h2, h3 {
+        page-break-after: avoid; /* Evita que un título quede separado de su contenido */
+    }
+}
