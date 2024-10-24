@@ -1,0 +1,36 @@
+
+@import url("contrastebajo.css");
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+body, p, nav>p, nav>ul>li>a, div>ul>li>a, div>ul>li>ul>li>a, section>p, section>a, footer>p {
+    font-size: 180%;
+}
+
+body>h1, body>h2, body>h3{
+    font-size:300%;
+}
+
+header>h1{
+    font-size:300%;
+}
+
+form{
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+body>p>a{
+    text-decoration: underline;
+}
+
+label{
+    font-size:180%;
+}
+
+#titulosarticulos{
+    font-size:300%;
+}
+
+p{
+    max-width: 80ch;
+}
+

@@ -4,6 +4,7 @@
 @import url("print.css");
 @import url("medianoche.css") screen and (prefers-color-scheme: dark);
 @import url("alto-contraste.css") screen and (prefers-contrast: more);
+@import url("bajo-contraste.css") screen and (prefers-contrast: less);
 
 :root {
     /* Paleta de colores accesible AAA */
@@ -16,6 +17,22 @@
     --color-footer-texto: #ffffff; /* Texto blanco en el pie de página */
     --color-cita-fondo: #e6f2ff; /* Fondo suave para citas */
 	--color-header-fondo: #333333; /* Azul medianamente oscuro para el header */
+}
+
+
+/* Secciones - centrando el texto */
+section {
+    padding: 20px;
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-borde);
+    margin-bottom: 20px;
+    text-align: center; /* Centra el texto */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Márgenes opcionales para separar el video de otros contenidos */
 }
 
 .anuncio {
@@ -54,7 +71,7 @@ body {
     color: var(--color-texto); /* Texto principal */
     line-height: 1.6;
     font-size: 1.125rem; /* 18px por defecto, tamaño accesible */
-    margin: 0;
+    margin: 10 px;
     padding: 0;
 }
 
@@ -195,14 +212,9 @@ header h1 {
     color: var(--color-footer-texto); /* Texto blanco para mejor contraste */
     font-size: 2.5rem; /* Tamaño grande */
 }
-    background-color: var(--color-primario); /* Azul oscuro accesible */
-    color: var(--color-footer-texto); /* Texto blanco para contraste */
-    padding: 20px;
-    text-align: center;
-}
 
-/* Navegación */
-nav a {
+
+nav a{
     color: var(--color-primario);
     padding: 10px;
     margin: 0 5px;
@@ -240,12 +252,6 @@ form:focus-within {
     background-color:#E6E6FA;
    
 }
-
-fieldset {width: 8em; padding: 1em;}
-legend {font-weight: bold;}
-label {float: left; display: block; width: 8em;}
-input[type="text"] {float: none; display: block;}
-.centrado {margin: 10px auto;}
 
 .textolargo {	
 			

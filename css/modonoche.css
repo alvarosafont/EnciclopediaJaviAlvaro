@@ -5,10 +5,10 @@
     --color-primario: #66b3ff; /* Azul claro para enlaces y destacados */
     --color-secundario: #80d4ff; /* Azul más claro para hover y bordes */
     --color-borde: #666666; /* Borde gris oscuro */
-    --color-footer-fondo: #000000; /* Fondo negro para el pie de página */
     --color-footer-texto: #f5f5f5; /* Texto claro en el pie de página */
     --color-cita-fondo: #333333; /* Fondo oscuro para citas */
-    --color-header-fondo: #000000; /* Fondo negro para el header */
+	--color-fondo-inverso: #CCCCCC; /* Un gris claro, inverso del fondo oscuro */
+
 }
 
 /* Aplica los estilos globales cuando el modo noche esté activado */
@@ -26,14 +26,31 @@ a:hover {
 }
 
 /* Header y Footer */
-header {
-    background-color: var(--color-header-fondo);
-    color: var(--color-footer-texto);
+header{
+    background-color: var(--color-fondo-inverso);
+    color: var( --color-cita-fondo);
+
+    
+}
+h1{
+    background-color: var(--color-fondo-inverso);
+	color: var( --color-cita-fondo);
+	border-bottom: 3px solid var(--color-cita-fondo);
+}
+
+header h1{
+    background-color: var(--color-fondo-inverso);
+    color: var( --color-cita-fondo);   
+}
+
+head {
+	background-color:var(--color-fondo-inverso);
+	color: var( --color-cita-fondo);
 }
 
 footer {
-    background-color: var(--color-footer-fondo);
-    color: var(--color-footer-texto);
+	background-color:var(--color-fondo-inverso);
+	color: var( --color-cita-fondo);
 }
 
 .anuncio {
@@ -66,5 +83,8 @@ input:focus {
 }
 
 form:focus-within {
-    background-color: #444444; /* Fondo oscuro dentro de formularios */
+    background-color:var(--color-borde); 
+}
+header img{
+filter:invert(1);
 }

@@ -1,0 +1,81 @@
+/* Modo Bajo Contraste */
+:root {
+    --color-texto: #333333; /* Gris oscuro suave para texto */
+    --color-fondo: #f2f2f2; /* Gris claro en lugar del fondo amarillo */
+    --color-primario: #6699cc; /* Azul suave para enlaces */
+    --color-secundario: #ff9966; /* Naranja suave para resaltar elementos */
+    --color-borde: #999999; /* Borde gris medio */
+    --color-footer-fondo: #e6e6e6; /* Fondo gris claro para el pie de página */
+    --color-footer-texto: #333333; /* Texto gris oscuro para el pie de página */
+    --color-cita-fondo: #f7f2cc; /* Fondo amarillo suave para citas */
+    --color-header-fondo: #002a4d; /* Fondo azul oscuro para el header */
+    --color-header-texto: #ffffff;
+}
+
+/* Aplica los estilos globales cuando el modo bajo contraste esté activado */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+a {
+    color: var(--color-primario);
+}
+
+a:hover {
+    color: var(--color-secundario);
+}
+
+/* Header y Footer */
+header {
+    background-color: var(--color-header-fondo);
+    color: var(--color-header-texto);
+}
+header h1 {
+	color: var(--color-header-texto);
+}
+
+h1 {
+	color: var(--color-header-texto);
+	border-bottom: 3px solid var(--color-header-texto);
+}
+
+footer {
+    background-color: var(--color-header-fondo);
+    color: var(--color-header-texto);
+}
+
+.anuncio {
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+    border-left: 5px solid var(--color-borde);
+}
+
+blockquote {
+    background-color: var(--color-cita-fondo);
+    color: var(--color-texto);
+    border-left: 5px solid var(--color-primario);
+}
+
+table {
+    border: 1px solid var(--color-borde);
+}
+
+th {
+    background-color: var(--color-primario);
+    color: var(--color-footer-texto);
+}
+
+td {
+    background-color: var(--color-fondo);
+}
+
+/* Inputs y formularios */
+input:focus {
+    background-color: #ffe6cc; /* Fondo naranja muy suave cuando el input recibe el foco */
+}
+
+form:focus-within {
+    background-color: var(--color-cita-fondo; 
+}
+
