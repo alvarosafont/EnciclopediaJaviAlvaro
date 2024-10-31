@@ -17,7 +17,7 @@
     button, 
     input, 
     textarea, 
-    aside {
+    aside , main p{
         display: none !important; /* Ocultar navegación, botones y aside */
     }
 

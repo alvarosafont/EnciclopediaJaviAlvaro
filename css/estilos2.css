@@ -180,12 +180,7 @@ caption {
 font-variant: small-caps;
 }
 
-/* Imágenes - BORRAR*/
-img {
-   "width: 100%; 
-   max-width: 100px; 
-   height: auto;"
-}
+
 
 /* Footer */
 footer {
@@ -203,14 +198,21 @@ footer a {
 header {
     background-color: var(--color-header-fondo); /* Nuevo color para el header */
     color: var(--color-footer-texto); /* Texto blanco */
-    padding: 20px;
+    padding: 12px;
     text-align: center;
 }
 
 /* Estilo del h1 dentro del header */
 header h1 {
     color: var(--color-footer-texto); /* Texto blanco para mejor contraste */
-    font-size: 2.5rem; /* Tamaño grande */
+    font-size: 1.8rem; /* Tamaño grande */
+    margin: 0; /* Quitar margen extra alrededor del título */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+header img {
+    max-height: 200px; /* Tamaño máximo para el logo */
+    margin-bottom: 10px; /* Espacio entre el logo y el título */
 }
 
 
