@@ -180,8 +180,6 @@ caption {
 font-variant: small-caps;
 }
 
-
-
 /* Footer */
 footer {
     background-color: var(--color-footer-fondo);
@@ -215,7 +213,6 @@ header img {
     margin-bottom: 10px; /* Espacio entre el logo y el título */
 }
 
-
 nav a{
     color: var(--color-primario);
     padding: 10px;
@@ -247,7 +244,6 @@ input:focus {
     background-color: #ffcccc; /* Fondo rojo claro cuando recibe el foco */
     
 }
-
 
 /* Foco visible dentro de formularios */
 form:focus-within {
@@ -297,4 +293,33 @@ form:focus-within {
     margin: 0 auto; 
     width: 100%; 
     max-width: 500px; 
+}
+
+/* Contenedor del iframe */
+.blog-container {
+    width: 600px;
+    max-width: 600px; /* Opcional: límite de ancho máximo para pantallas grandes */
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilo del iframe adaptativo */
+.blog-container iframe {
+    width: 100%;
+    height: 80vh; /* Altura relativa a la ventana gráfica */
+    border: none; /* Opcional: quita el borde del iframe */
+}
+
+/* Adaptación a pantallas más pequeñas */
+@media (max-width: 768px) {
+    .blog-container iframe {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-container iframe {
+        height: 60vh;
+    }
 }
