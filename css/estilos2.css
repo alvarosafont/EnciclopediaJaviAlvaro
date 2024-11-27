@@ -297,11 +297,12 @@ form:focus-within {
 
 /* Contenedor del iframe */
 .blog-container {
-    width: 600px;
-    max-width: 600px; /* Opcional: límite de ancho máximo para pantallas grandes */
+    width: 50%;
+    max-width: 600%; /* Opcional: límite de ancho máximo para pantallas grandes */
     margin: 0 auto;
     padding: 10px;
     box-sizing: border-box;
+	display: flex;
 }
 
 /* Estilo del iframe adaptativo */
